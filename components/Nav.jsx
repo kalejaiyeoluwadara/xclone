@@ -3,23 +3,26 @@ import React from "react";
 import FontAwesome6 from "@expo/vector-icons/FontAwesome6";
 import { SafeAreaView } from "react-native-safe-area-context";
 import img from "../assets/example.jpeg";
+import twitter from "../assets/twitter.png";
 
 export default function Nav() {
   return (
     <SafeAreaView>
       <View className="flex w-full h-[60px] flex-row justify-between items-center px-4">
         {/* Profile Picture */}
-        <View className="h-[50px] overflow-hidden w-[50px] bg-gray-300 rounded-full">
+        <View className="h-[50px] overflow-hidden w-[50px]  rounded-full">
           <Image
             className="bg-cover h-[50px] w-[50px] bg-center"
             source={img}
-            style={styles.image}
           />
         </View>
 
         {/* Twitter Icon */}
-        <View className="h-[50px] w-[50px] items-center justify-center">
-          <FontAwesome6 name="twitter" size={24} color="white" />
+        <View className=" overflow-hidden  rounded-full">
+          <Image
+            className="bg-cover h-[40px] w-[40px] bg-center"
+            source={twitter}
+          />
         </View>
 
         {/* Empty View */}
